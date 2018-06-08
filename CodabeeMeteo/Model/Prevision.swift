@@ -41,7 +41,8 @@ class Prevision {
         self._date = date
         self._icone = icone
         self._desc = desc
-        self._jour = ""
+        self._jour = DateHelper.obtenir.jourDeLaSemaine(self._date) ?? ""
+        print(self._jour)
     }
     
     

@@ -13,6 +13,7 @@
 		4C5AF07620CA73040018049B /* PrevisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF07520CA73040018049B /* PrevisionCell.swift */; };
 		4C5AF07820CA743E0018049B /* DonneeUniqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF07720CA743E0018049B /* DonneeUniqueCell.swift */; };
 		4C5AF07A20CA78250018049B /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF07920CA78250018049B /* TableViewExtension.swift */; };
+		4C5AF07C20CA7FE90018049B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF07B20CA7FE90018049B /* DateHelper.swift */; };
 		4C8CB6A220C960CC0045E135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CB6A120C960CC0045E135 /* AppDelegate.swift */; };
 		4C8CB6A720C960CC0045E135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8CB6A520C960CC0045E135 /* Main.storyboard */; };
 		4C8CB6A920C960CC0045E135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8CB6A820C960CC0045E135 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		4C5AF07520CA73040018049B /* PrevisionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevisionCell.swift; sourceTree = "<group>"; };
 		4C5AF07720CA743E0018049B /* DonneeUniqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonneeUniqueCell.swift; sourceTree = "<group>"; };
 		4C5AF07920CA78250018049B /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		4C5AF07B20CA7FE90018049B /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		4C8CB69E20C960CC0045E135 /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8CB6A120C960CC0045E135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8CB6A620C960CC0045E135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				4C5AF06F20CA67A80018049B /* Prevision.swift */,
 				4C5AF07120CA6EDA0018049B /* Extensions.swift */,
 				4C5AF07320CA70CC0018049B /* ImageDownloader.swift */,
+				4C5AF07B20CA7FE90018049B /* DateHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				4C5AF07620CA73040018049B /* PrevisionCell.swift in Sources */,
 				4C8CB6BD20C964460045E135 /* API.swift in Sources */,
 				4C8CB6A220C960CC0045E135 /* AppDelegate.swift in Sources */,
+				4C5AF07C20CA7FE90018049B /* DateHelper.swift in Sources */,
 				4C5AF07A20CA78250018049B /* TableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
