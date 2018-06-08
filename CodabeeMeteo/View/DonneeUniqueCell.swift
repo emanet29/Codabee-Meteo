@@ -17,9 +17,10 @@ class DonneeUniqueCell: UICollectionViewCell {
     var prevision: Prevision!
     
     func miseEnPlace(prevision: Prevision){
+        layer.cornerRadius = 20
         self.prevision = prevision
         ImageDownloader.obtenir.imageDepuis(self.prevision.icone, imageView: icone)
         temperature.text = self.prevision.temperature.convertirEnIntString()
-        desc.text = self.prevision.jour + "  " + (DateHelper.obtenir.heure(self.prevision.date) ?? "") + "\n" + self.prevision.desc
+        desc.text = self.prevision.jour + "\n" + (DateHelper.obtenir.heure(self.prevision.date) ?? "") + "\n" + self.prevision.desc
     }
 }
