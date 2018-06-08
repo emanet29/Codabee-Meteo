@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C5AF07020CA67A80018049B /* Prevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF06F20CA67A80018049B /* Prevision.swift */; };
 		4C5AF07220CA6EDA0018049B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF07120CA6EDA0018049B /* Extensions.swift */; };
+		4C5AF07420CA70CC0018049B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5AF07320CA70CC0018049B /* ImageDownloader.swift */; };
 		4C8CB6A220C960CC0045E135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CB6A120C960CC0045E135 /* AppDelegate.swift */; };
 		4C8CB6A720C960CC0045E135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8CB6A520C960CC0045E135 /* Main.storyboard */; };
 		4C8CB6A920C960CC0045E135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8CB6A820C960CC0045E135 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		1638F064F333B888B98EE1E4 /* Pods-CodabeeMeteo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodabeeMeteo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodabeeMeteo/Pods-CodabeeMeteo.debug.xcconfig"; sourceTree = "<group>"; };
 		4C5AF06F20CA67A80018049B /* Prevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prevision.swift; sourceTree = "<group>"; };
 		4C5AF07120CA6EDA0018049B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C5AF07320CA70CC0018049B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		4C8CB69E20C960CC0045E135 /* CodabeeMeteo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodabeeMeteo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8CB6A120C960CC0045E135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8CB6A620C960CC0045E135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				4C5AF06F20CA67A80018049B /* Prevision.swift */,
 				4C5AF07120CA6EDA0018049B /* Extensions.swift */,
+				4C5AF07320CA70CC0018049B /* ImageDownloader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				4C8CB6BA20C962060045E135 /* LocalisationExtension.swift in Sources */,
 				4C5AF07220CA6EDA0018049B /* Extensions.swift in Sources */,
+				4C5AF07420CA70CC0018049B /* ImageDownloader.swift in Sources */,
 				4C8CB6B820C961320045E135 /* MeteoController.swift in Sources */,
 				4C5AF07020CA67A80018049B /* Prevision.swift in Sources */,
 				4C8CB6BD20C964460045E135 /* API.swift in Sources */,
