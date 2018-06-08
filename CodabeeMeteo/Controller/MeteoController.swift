@@ -13,6 +13,8 @@ import Alamofire
 class MeteoController: UIViewController {
     
     var locationManager: CLLocationManager?
+    var previsions = [Prevision]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         miseEnPlaceCLLocation()
