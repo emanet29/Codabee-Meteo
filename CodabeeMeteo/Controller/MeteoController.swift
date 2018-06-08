@@ -21,8 +21,8 @@ class MeteoController: UIViewController {
     
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
-    var previsionsJournalieres= [PrevisionJournaliere]()
-    
+    var previsionsJournalieres = [PrevisionJournaliere]()
+    var enTrainDeRecupererLesDonnees = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,7 @@ class MeteoController: UIViewController {
     }
     
     func obtenirPrevisionsMeteo(latitude: Double, longitude: Double) {
+        enTrainDeRecupererLesDonnees = true
         let urlDeBase = "http://api.openweathermap.org/data/2.5/forecast?"
         let latitude = "lat=" + String(latitude)
         let longitude = "&lon=" + String(longitude)
@@ -73,7 +74,7 @@ class MeteoController: UIViewController {
                         }
                         // Recharger les données
                         self.miseEnPlaceValeursDUMoment()
-                        self.tableView.reloadData()
+                        self.obtenirPrevisionsJournalieres()
                     }
                 }
                 
@@ -130,6 +131,7 @@ class MeteoController: UIViewController {
                 }
                 
             }
+            enTrainDeRecupererLesDonnees = false
             self.tableView.reloadData()
         }
         

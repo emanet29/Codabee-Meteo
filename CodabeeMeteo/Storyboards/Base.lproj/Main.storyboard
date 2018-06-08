@@ -127,6 +127,41 @@
                                             <outlet property="collectionView" destination="Jtp-0V-P9y" id="JYx-YM-rV4"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JourCell" rowHeight="121" id="hk4-hT-aLG" customClass="JourCell" customModule="CodabeeMeteo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hk4-hT-aLG" id="b4K-9O-kEx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2mV-xl-C7E">
+                                                    <rect key="frame" x="23" y="21" width="80" height="79"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="LOJ-5A-mRn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQO-8f-4tV">
+                                                    <rect key="frame" x="111" y="11" width="249" height="99"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZQO-8f-4tV" firstAttribute="top" secondItem="b4K-9O-kEx" secondAttribute="topMargin" id="CFc-Al-735"/>
+                                                <constraint firstItem="2mV-xl-C7E" firstAttribute="leading" secondItem="b4K-9O-kEx" secondAttribute="leadingMargin" constant="8" id="Lrq-qJ-YUr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZQO-8f-4tV" secondAttribute="bottom" id="R9j-yA-9aV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2mV-xl-C7E" secondAttribute="bottom" constant="10" id="Vws-rX-lp5"/>
+                                                <constraint firstItem="ZQO-8f-4tV" firstAttribute="trailing" secondItem="b4K-9O-kEx" secondAttribute="trailingMargin" id="iM0-bY-uPq"/>
+                                                <constraint firstItem="ZQO-8f-4tV" firstAttribute="leading" secondItem="2mV-xl-C7E" secondAttribute="trailing" constant="8" id="spH-Cj-9cM"/>
+                                                <constraint firstItem="2mV-xl-C7E" firstAttribute="top" secondItem="b4K-9O-kEx" secondAttribute="topMargin" constant="10" id="wuX-uE-Jyy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="icone" destination="2mV-xl-C7E" id="sOA-nE-PJt"/>
+                                            <outlet property="texte" destination="ZQO-8f-4tV" id="vnh-ZH-RDV"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n9v-cW-IAM">
