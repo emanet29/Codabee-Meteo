@@ -27,16 +27,60 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vtn-Hf-8zN">
+                                <rect key="frame" x="16" y="88" width="235" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9fv-sP-Ro9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2VT-Ea-EcJ">
+                                <rect key="frame" x="259" y="88" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="10h-rO-FBC"/>
+                                    <constraint firstAttribute="height" constant="100" id="izv-aC-71g"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TsE-KE-HBO">
+                                <rect key="frame" x="0.0" y="246" width="375" height="421"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n9v-cW-IAM">
+                                <rect key="frame" x="16" y="198" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rVF-c5-3XW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="n9v-cW-IAM" firstAttribute="top" secondItem="vtn-Hf-8zN" secondAttribute="bottom" constant="10" id="2yc-Ah-jeM"/>
+                            <constraint firstItem="n9v-cW-IAM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FYh-tY-rBn"/>
                             <constraint firstItem="Bh9-WA-2nN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GGc-47-ieh"/>
+                            <constraint firstItem="2VT-Ea-EcJ" firstAttribute="top" secondItem="Bh9-WA-2nN" secondAttribute="bottom" constant="8" id="GQh-qD-0wG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n9v-cW-IAM" secondAttribute="trailing" constant="16" id="M76-dx-Lye"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2VT-Ea-EcJ" secondAttribute="trailing" constant="16" id="Pii-oS-QCi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bh9-WA-2nN" secondAttribute="trailing" constant="16" id="Qqm-cW-1Ay"/>
+                            <constraint firstItem="vtn-Hf-8zN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RTz-rS-qgJ"/>
+                            <constraint firstItem="vtn-Hf-8zN" firstAttribute="top" secondItem="Bh9-WA-2nN" secondAttribute="bottom" constant="8" id="Zjk-yU-oPX"/>
+                            <constraint firstItem="TsE-KE-HBO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c79-ak-GPz"/>
+                            <constraint firstItem="TsE-KE-HBO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="igj-Xo-XDc"/>
+                            <constraint firstItem="TsE-KE-HBO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qvY-O7-cnC"/>
+                            <constraint firstItem="TsE-KE-HBO" firstAttribute="top" secondItem="n9v-cW-IAM" secondAttribute="bottom" constant="8" id="uUC-a9-bT5"/>
                             <constraint firstItem="Bh9-WA-2nN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wx5-13-PYb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="descTempsActuel" destination="n9v-cW-IAM" id="DDP-16-oDP"/>
+                        <outlet property="iconetempsActuel" destination="2VT-Ea-EcJ" id="Omx-0S-YFD"/>
+                        <outlet property="tableView" destination="TsE-KE-HBO" id="BeP-AF-1mQ"/>
+                        <outlet property="temperatureLabel" destination="vtn-Hf-8zN" id="XzB-Th-lMX"/>
                         <outlet property="villeLabel" destination="Bh9-WA-2nN" id="ru5-WW-m9b"/>
                     </connections>
                 </viewController>

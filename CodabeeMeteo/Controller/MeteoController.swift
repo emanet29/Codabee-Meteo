@@ -12,6 +12,11 @@ import Alamofire
 
 class MeteoController: UIViewController {
     @IBOutlet weak var villeLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var iconetempsActuel: UIImageView!
+    @IBOutlet weak var descTempsActuel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    
     
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
@@ -63,7 +68,7 @@ class MeteoController: UIViewController {
                             
                         }
                         // Recharger les données
-                        
+                        self.miseEnPlaceValeursDUMoment()
                     }
                 }
                 
@@ -72,6 +77,15 @@ class MeteoController: UIViewController {
                 
                 
             }
+        }
+        
+    }
+    
+    func miseEnPlaceValeursDUMoment(){
+        if previsions.count > 0 {
+            let tempsActuel = previsions[0]
+            temperatureLabel.text = tempsActuel.temperature.convertirEnIntString()
+            descTempsActuel.text = tempsActuel.desc
         }
         
     }
