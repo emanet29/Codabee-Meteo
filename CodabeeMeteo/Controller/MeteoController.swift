@@ -32,6 +32,7 @@ class MeteoController: UIViewController {
         miseEnPlaceTableView()
     }
     
+    
     func obtenirPrevisionsMeteo(latitude: Double, longitude: Double) {
         enTrainDeRecupererLesDonnees = true
         let urlDeBase = "http://api.openweathermap.org/data/2.5/forecast?"

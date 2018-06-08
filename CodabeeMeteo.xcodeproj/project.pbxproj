@@ -115,8 +115,8 @@
 		4C8CB6B320C960E80045E135 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4C8CB6B920C962060045E135 /* LocalisationExtension.swift */,
 				4C8CB6B720C961320045E135 /* MeteoController.swift */,
+				4C8CB6B920C962060045E135 /* LocalisationExtension.swift */,
 				4C5AF07920CA78250018049B /* TableViewExtension.swift */,
 			);
 			path = Controller;
