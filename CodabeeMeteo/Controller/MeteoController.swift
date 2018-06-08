@@ -17,6 +17,7 @@ class MeteoController: UIViewController {
     @IBOutlet weak var descTempsActuel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    let previsionCell = "PrevisionCell"
     
     var locationManager: CLLocationManager?
     var previsions = [Prevision]()
@@ -24,6 +25,7 @@ class MeteoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         miseEnPlaceCLLocation()
+        miseEnPlaceTableView()
     }
     
     func obtenirPrevisionsMeteo(latitude: Double, longitude: Double) {
@@ -69,6 +71,7 @@ class MeteoController: UIViewController {
                         }
                         // Recharger les données
                         self.miseEnPlaceValeursDUMoment()
+                        self.tableView.reloadData()
                     }
                 }
                 
